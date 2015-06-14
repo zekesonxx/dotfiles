@@ -67,3 +67,12 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
     zle -N zle-line-init
     zle -N zle-line-finish
 fi
+
+# NVM
+if [ -f "~/.nvm/nvm.sh" ]; then
+    source "~/.nvm/nvm.sh";
+fi
+
+if [ -f "/usr/share/nvm/init-nvm.sh" ]; then
+    source "/usr/share/nvm/init-nvm.sh";
+fi
